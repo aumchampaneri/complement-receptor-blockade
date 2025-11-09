@@ -1,0 +1,29 @@
+name: sjogrens-bioinfo
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python>=3.8
+  - scanpy>=1.9
+  - anndata
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - celltypist
+  - mygene
+  - pydeseq2
+  - liana
+  - upsetplot
+  - scipy
+  - pip
+  - pip:
+      # For any packages not available via conda
+      # - liana  # Uncomment if liana is not available via conda
+      # - pydeseq2  # Uncomment if pydeseq2 is not available via conda
+      # - celltypist  # Uncomment if celltypist is not available via conda
+      # - mygene  # Uncomment if mygene is not available via conda
+  # Optional for interactive work
+  # - jupyter
+  # - ipython

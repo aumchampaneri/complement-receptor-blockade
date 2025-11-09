@@ -1,0 +1,15 @@
+scanpy>=1.9
+anndata
+pandas
+numpy
+matplotlib
+seaborn
+celltypist
+mygene
+pydeseq2
+liana
+upsetplot
+scipy
+# Optional: for interactive plots or notebook use
+# jupyter
+# ipython
