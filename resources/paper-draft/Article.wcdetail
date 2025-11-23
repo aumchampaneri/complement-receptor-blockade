@@ -1,0 +1,24 @@
+
+!!! File Article.bbl not found in path []. !!!
+File: Article.tex
+Encoding: utf8
+Sum count: 744
+Words in text: 689
+Words in headers: 42
+Words outside text (captions, etc.): 13
+Number of headers: 15
+Number of floats/tables/figures: 1
+Number of math inlines: 0
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  59+12+0 (1/0/0/0) _top_
+  3+1+0 (1/0/0/0) Abstract
+  226+5+0 (5/0/0/0) main
+  176+1+0 (1/0/0/0) Section: Introduction
+  63+20+13 (4/1/0/0) Section: Results
+  120+1+0 (1/0/0/0) Section: Discussion
+  41+1+0 (1/0/0/0) Section: Conclusions
+  1+1+0 (1/0/0/0) Section: Bibliography
+
+(errors:1)

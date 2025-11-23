@@ -1,0 +1,179 @@
+\documentclass[times, twoside, watermark]{zHenriquesLab-StyleBioRxiv}
+\usepackage{blindtext}
+
+% Please give the surname of the lead author for the running footer
+\leadauthor{Champaneri} 
+
+\begin{document}
+
+\title{Therapeutic Potential of Complement Receptor Blockade in Sjögren's Syndrome and Lupus Erythematosus}
+\shorttitle{Complement Receptor Blockade}
+
+% Use letters for affiliations, numbers to show equal authorship (if applicable) and to indicate the corresponding author
+\author[1]{Aum Champaneri}
+\author[2,\Letter]{Jessy J. Alexander}
+
+\affil[1]{Quantitative Imaging and Nanobiophysics Group, MRC Laboratory for Molecular Cell Biology and Department of Cell and Developmental Biology, University College London, Gower Street, London, WC1E 6BT, United Kingdom}
+\affil[2]{Quantitative Imaging and Nanobiophysics Group, MRC Laboratory for Molecular Cell Biology and Department of Cell and Developmental Biology, University College London, Gower Street, London, WC1E 6BT, United Kingdom}
+
+\maketitle
+
+%TC:break Abstract
+%the command above serves to have a word count for the abstract
+\begin{abstract}
+Add a abstract
+\end {abstract}
+%TC:break main
+%the command above serves to have a word count for the abstract
+
+%\begin{keywords}
+bla | bla | bla | bla
+%\end{keywords}
+
+\begin{corrauthor}
+%\texttt{r.henriques{@}ucl.ac.uk}
+r.henriques\at ucl.ac.uk
+\end{corrauthor}
+
+\subsubsection*{Background}
+%	\texttt{The complement system, first described by Jules Bordet in the late 19th century, is a cornerstone of innate immunity \cite{bordet1895}. Traditionally considered an antimicrobial cascade, complement has re-emerged as a key modulator of tissue homeostasis, synaptic pruning, and autophagy.}
+	First described by Jules Bordet in the late 19th century \cite{bordet1895}; the complement system has become a cornerstone of innate immunity. Originally described to be an antimicrobial cascade; the complement cascade has re-emerged as a key modulator of tissue homeostasis, synaptic pruning, and autophagy.
+\subsubsection*{Objective}
+%	\texttt{To examine the expression of the anaphylatoxin receptors C3aR and C5aR in the brain and kidney of patients with chronic autoimmune disease and to assess their therapeutic relevance.}
+	To examine the expression of anaphylatoxin receptors C3aR and C5aR in different tissues of human patients with chronic autoimmune disease (Sjögren's Syndrome and Lupus erythematosus)  and to assess their therapeutic relevance.
+\subsubsection*{Methods}
+%	\texttt{Publicly available single-cell RNA-sequencing datasets from normal, Sjögren’s syndrome, and systemic lupus erythematosus (SLE) tissues were assessed to determine and localize the expression of C3aR and C5aR across immune and parenchymal cell populations. Data were normalized and visualized using Seurat, UMAP, and differential-expression analyses.}
+	Utilize publicly available single-cell RNA-sequencing datasets for normal, Sjögren's syndrome, and Lupus erythematosus. Complement cascade expression will be assessed per dataset, accompanied by differential expression analysis using pyDESeq2 \cite{pydeseq2}, receptor-ligand analysis using LIANA \cite{Dimitrov_2024}. All preprocessing for data will be done using scanpy \cite{Wolf_2018}.
+\subsubsection*{Results}
+	\texttt{Both receptors were upregulated in immune and stromal compartments of diseased tissues. In SLE kidney, C3aR and C5aR were enriched in macrophages, tubular epithelial cells, and endothelial subsets, consistent with heightened inflammatory signaling. In Sjögren’s salivary gland and brain tissue, microglia and astroglia exhibited increased C3aR expression, whereas C5aR was elevated in infiltrating myeloid cells.}
+	
+\subsubsection*{Conclusions}
+	\texttt{Chronic autoimmune disease is associated with sustained activation of complement driven signaling in both brain and kidney. The elevated expression of C3aR and C5aR highlights these receptors as actionable therapeutic targets. Small-molecule antagonists and monoclonal antibodies directed against the C3a/C5a axis warrant further investigation for tissue-specific complement modulation.}
+
+\section*{Introduction}
+%\Blindtext
+	The complement system, discovered by Jules Bordet in the late 1800s, represents one of the oldest described immune effector pathways. Originally characterized for its bactericidal activity, complement has since been recognized as a versatile regulator of host defense and tissue homeostasis. Recent advances have revealed roles extending far beyond microbial killing, encompassing synaptic pruning, neurodevelopment, autophagy, and metabolic regulation.
+	Complement activation generates potent inflammatory mediators, including the anaphylatoxins C3a and C5a, which signal through their cognate G-protein-coupled receptors C3aR and C5aR (CD88). Aberrant activation of these pathways contributes to autoimmunity, neuroinflammation, and organ injury. Chronic immune diseases such as Sjögren’s syndrome and systemic lupus erythematosus (SLE) exhibit systemic complement dysregulation, yet tissue-specific expression patterns of complement receptors remain incompletely understood.
+	Given the recent development of pharmacologic inhibitors targeting C3aR and C5aR, defining their expression across organs affected by autoimmunity may reveal new therapeutic opportunities. Here, we leverage openly available single-cell RNA-seq data from normal, Sjögren’s, and lupus tissues to interrogate C3aR and C5aR expression in brain and kidney, organs frequently affected by complement-mediated pathology.
+
+
+\section*{Results}
+
+Just for kicks here's a citation \cite{carvelli2020}. And a reference to a supplement \cref{note:Note1}. And \nameref{note:Note1}.
+%\Blindtext
+
+\begin{figure}%[tbhp]
+\centering
+\includegraphics[width=.8\linewidth]{Figures/BrainArea.jpg}
+\caption{Placeholder image of Iris with a long example caption to show justification setting.}
+\label{fig:computerNo}
+\end{figure}
+
+%\Blindtext
+
+Figure \ref{fig:computerNo} shows an example of how to insert a column-wide figure. To insert a figure wider than one column, please use the \verb|\begin{figure*}...\end{figure*}| environment. Figures wider than one column should be sized to 11.4 cm or 17.8 cm wide. Use \verb|\begin{SCfigure*}...\end{SCfigure*}| for a wide figure with side captions.
+
+%%%%%%%%%%%%%%%%%
+
+\subsubsection*{C3aR and C5aR Expression in Normal Brain and Kidney}
+
+\subsubsection*{Enhanced Expression in Sjögren’s and Lupus Tissues}
+
+\subsubsection*{Pathway Enrichment}
+
+\section*{Discussion}
+	Our findings demonstrate that complement anaphylatoxin receptors are persistently upregulated in both central and peripheral target organs in chronic autoimmune disease such as sjogrens. This pattern underscores the dual nature of complement, vital for homeostasis but deleterious when uncontrolled.
+	The strong expression in microglia parallels reports implicating complement in synaptic pruning and neurodegeneration, while renal upregulation aligns with complement driven glomerular and tubulointerstitial injury. Therapeutic inhibition of C3aR/C5aR signaling has shown benefit in preclinical models, and our transcriptomic results lend human relevance to these approaches.
+	Emerging C3aR antagonists and C5aR inhibitors (e.g., avacopan) may thus hold promise for neuro-renal protection in Sjögren’s. Integrating receptor profiling with spatial transcriptomics and proteomic validation will refine patient stratification for complement-targeted therapy.
+
+\section*{Conclusions}
+	Complement receptors C3aR and C5aR are upregulated in autoimmune brain and kidney, bridging innate immunity and chronic inflammation. Their distribution across immune and parenchymal compartments identifies them as rational targets for tissue-directed complement modulation.
+
+\begin{acknowledgements}
+Need to thank the repository etc.
+\end{acknowledgements}
+
+\begin{interests}
+None.
+\end{interests}
+
+\section*{Bibliography}
+%\bibliography{zHenriquesLab-Mendeley}
+\bibliography{references.bib}
+
+%% You can use these special %TC: tags to ignore certain parts of the text.
+%TC:ignore
+%the command above ignores this section for word count
+\onecolumn
+\newpage
+
+\section*{Word Counts}
+This section is \textit{not} included in the word count. 
+\subsection*{Notes on Nature Methods Brief Communication}
+\begin{itemize}
+\item Abstract: 3 sentences, 70 words.
+\item Main text: 3 pages, 2 figures, 1000-1500 words, more figures possible if under 3 pages
+\end{itemize}
+
+\subsection*{Statistics on word count}
+\detailtexcount
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Supplementary Information %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\captionsetup*{format=largeformat}
+\section{TODO List} \label{note:Note1} 
+\begin{enumerate}
+	\item Add references
+		\begin{enumerate}
+			\item References are all in reference manager
+			\\ Citations need to be added appropriately within
+			\item \sout{Bordet J 1895}
+			\item \sout{Stevens et al., Cell 2017}
+			\item \sout{Ricklin et al., Nat Rev Immunol 2016}
+			\item \sout{Carvelli et al., Nat Med 2020}
+			\item \sout{Jayne et al., N Engl J Med 2021}
+			\item Ammon Peck
+			\item Julian Ambrus
+		\end{enumerate}
+	\item Write abstract
+	\item REVISE
+\end{enumerate}
+
+\section{Dataset Outline} \label{note:Note2} 
+\subsection{Lupus erythematosus}
+\begin{enumerate}
+	\item \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE179633}{GSE179633} \cite{Zheng_2022} \texttt{}
+			\\ \textbf{Summary:}
+			Lupus, a server and complex autoimmune disease, is clinically divided into cutaneous lupus erythematosus (CLE) which featured in skin damage, and systemic lupus erythematosus (SLE) which characterized in systemic multi-organ damage. The distinction of these two types of lupus is widely unknown. Here, we collected 23 skin biopsies of healthy control(HC), DLE (discoid lupus erythematosus, a main type of CLE) and SLE, separated epidermis and dermis and performed single cell RNA sequencing through microfluidics based 10x genomics system. Our results demonstrated larger numbers of immune cells infiltrated in skin lesions of DLE than SLE, which may help to distinguish them. Then, non-immune cells such as keratinocytes and fibroblasts were showed functions like immune cells. Moreover, ISGs(interferon stimulated genes), HSP70 coding genes were found to be overexpressed in multi expanded subclusters. Some biological progresses such as autophagy and neutrophil activation were enriched in expanded subclusters.
+			\\ \textbf{Overall Design:}
+			We collected totally 23 skin biopsies from 5 HC, 8 DLE patients and 10 SLE patients and separated epidermis and dermis. Finally, 14 epidermal single-cell suspensions (4 HC,5 DLE and 5 SLE) and 16 dermal single-cell suspensions (4 HC,5 DLE and 7 SLE) were successfully prepared for scRNA-seq by 10× genomics.
+	\item \href{https://cellxgene.cziscience.com/collections/436154da-bcf1-4130-9c8b-120ff9a888f2}{GSE137029} \cite{perez2022} 
+			\\ \textbf{Description:}
+			Systemic lupus erythematosus (SLE) is a heterogeneous autoimmune disease. Knowledge of circulating immune cell types and states associated with SLE remains incomplete. We profiled over 1.2 million PBMCs (162 cases, 99 controls) with multiplexed single-cell RNA-sequencing (mux-seq). Cases exhibited elevated expression of type-1 interferon-stimulated genes (ISG) in monocytes, reduction of naïve CD4+ T cells that correlated with monocyte ISG expression, and expansion of repertoire-restricted cytotoxic GZMH+ CD8+ T cells. Cell-type-specific expression features predicted case-control status and stratified patients into two molecular subtypes. We integrated dense genotyping data to map cell-type-specific cis-eQTLs and link SLE-associated variants to cell-type-specific expression. These results demonstrate mux-seq as a systematic approach to characterize cellular composition, identify transcriptional signatures, and annotate genetic variants associated with SLE.
+	\item \href{https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-13596}{E-MTAB-13596} \cite{yostavegting2024}
+			\\ \textbf{Description:}
+			ANCA-associated glomerulonephritis (AGN) associates with a high risk of end-stage kidneydisease. The role of kidney immune cells in local inflammation remains unclear. Herewe investigate kidney immune cell diversity and function. Kidney tissue from AGN patients (n=5) and a lupus nephritis (LN) patient (n=1) were aquired during a biopsy procedure for a clinical indication. Needle-core biopsies were obtained for histopathological examination, and an additional pass was performed to retrieve kidney tissue for scRNA-seq. Healthy kidney tissue (n=1) was obtained from a kidney that was surgically removed do tue due to a (non-invasive) papillary urothelial carcinoma. Immediately after collection, kidney tissue was processed into a single-cell suspension and sorted using a 4-color flow cytometry panel to isolate living, CD45+immune cells. To aid in the multi-omic characterization, surface markers and T and B cell repertoires were sequenced in 2 samples (1 AGN patient and the nephrectomy control). These samples were incubated with an oligo-antibody TotalSeq-C cocktail containing 130 unique cell surface antigens.
+	\item \href{https://singlecell.broadinstitute.org/single_cell/study/SCP279/amp-phase-1}{AMP Phase 1} \cite{arazi2019} \cite{der2019} 
+			\\ \textbf{Description (Broad):}
+			Lupus nephritis is a potentially fatal autoimmune disease, whose current treatment is ineffective and often toxic. To gain insights into disease mechanisms, we analyzed kidney samples from lupus nephritis patients and healthy controls using single-cell RNA-seq. Our analysis revealed 21 subsets of leukocytes active in disease, including multiple populations of myeloid, T, NK and B cells, demonstrating both pro-inflammatory and resolving responses. We found evidence of local activation of B cells correlated with an age-associated B cell signature, and of progressive stages of monocyte differentiation within the kidney. A clear interferon response was observed in most cells. Two chemokine receptors, CXCR4 and CX3CR1, were broadly expressed, pointing to potential therapeutic targets. Gene expression of immune cells in urine and kidney was highly correlated, suggesting urine may be a surrogate for kidney biopsies. Our results provide a first comprehensive view of the complex network of leukocytes active in lupus nephritis kidneys.
+			\\ \textbf{Description (Metro):}
+			Lupus nephritis (LN) occurs in up to 50\% of patients with systemic lupus erythematosus (SLE), and is a major contributor to mortality and morbidity. LN presents as a highly heterogeneous disease both in histopathology and response to therapy. The molecular and cellular processes leading to renal damage and to the heterogeneity of the disease are not well understood. To elucidate the processes underpinning the heterogeneity of LN, we applied single cell RNA-sequencing (scRNA-seq) to renal biopsies from LN patients. Skin biopsies were evaluated as a source of biomarkers for monitoring kidney disease. Type-I interferon (IFN) response signatures were identified in tubular cells and keratinocytes, differentiating LN patients from healthy controls. Non-responders associated with higher IFN signatures in both tissue compartments. Moreover, non-response was also associated with a fibrotic signature in the tubular cells. Receptor-ligand interaction analysis indicated that the fibrotic process is likely mediated by FGF receptors with the initiating signal originating from infiltrating leukocytes. Differential expression analysis of tubular cells between proliferative and membranous LN pointed to several fibrosis-relevant pathways, which may offer insight into their histological differences. In summary, scRNA-seq was applied to LN to deconstruct its heterogeneity and provide novel targets for personalized approaches to therapy.
+\end{enumerate}
+\subsection{Sjögren's syndrome}
+\begin{enumerate}
+	\item \href{https://cellxgene.cziscience.com/collections/21bbfaec-6958-46bc-b1cd-1535752f6304}{CellXGene} \cite{Pranzatelli_2025}
+			\\ \textbf{Description:}
+			Sjögren's Disease (SjD) is a systemic autoimmune disease without a clear etiology or effective therapy. Utilizing unbiased single-cell and spatial transcriptomics to analyze human minor salivary glands in health and disease we developed a comprehensive understanding of the cellular landscape of healthy salivary glands and how that landscape changes in SjD patients. This study explores the complex interplay of varied cell types in the salivary glands and their role in the pathology of Sjögren's Disease.
+	\item \href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157278}{GSE157278} \cite{Hong_2021}
+			\\ \textbf{Summary:}
+			By single cell RNA sequencing,our data revealed disease-specific immune cell subsets and provide some potential new targets of pSS, specific expansion of CD4+ CTLs may be involved in the pathogenesis of pSS, which might give a valuable insights for therapeutic interventions of pSS.
+			\\ \textbf{Overall Design:}
+			We applied single cell RNA sequencing (scRNA-seq) to 57, 288 peripheral blood mononuclear cells (PBMCs) from 5 patients with pSS and 5 healthy controls. The immune cell subsets and susceptibility genes involved in the pathogenesis of pSS were analyzed.
+\end{enumerate}
+
+%TC:endignore
+%the command above ignores this section for word count
+
+\end{document}
