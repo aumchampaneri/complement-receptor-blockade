@@ -1,7 +1,4 @@
 # ignore raw data folder
-raw-data/
-data/
-outputs/
-plots/
+content/
 resouces/paper-draft/Figures
 resouces/paper-draft/.texpadtmp
