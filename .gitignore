@@ -1,4 +1,8 @@
 # ignore raw data folder
 content/
+lupus-emtab/
+lupus-pbmc/
+sjogrens-pbmc/
+local-notebooks/.pybiomart.sqlite
 resouces/paper-draft/Figures
 resouces/paper-draft/.texpadtmp
