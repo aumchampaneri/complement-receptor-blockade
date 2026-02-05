@@ -7,3 +7,5 @@ local-notebooks/.pybiomart.sqlite
 local-notebooks/cache/
 resouces/paper-draft/Figures
 resouces/paper-draft/.texpadtmp
+local-notebooks/dds_detailed_pipe.pkl
+local-notebooks/ds_detailed_pipe.pkl
