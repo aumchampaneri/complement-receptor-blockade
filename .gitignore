@@ -10,3 +10,4 @@ resouces/paper-draft/.texpadtmp
 local-notebooks/dds_detailed_pipe.pkl
 local-notebooks/ds_detailed_pipe.pkl
 resources/reference-papers/
+.vscode/
