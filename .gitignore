@@ -13,6 +13,7 @@ content/input-data/
 content/isp/
 content/processed-data/
 content/raw-data/
+!content/Geneformer/
 
 # ignore python cache files and auxiliary files
 local-notebooks/.pybiomart.sqlite
