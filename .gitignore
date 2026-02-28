@@ -1,13 +1,28 @@
-# ignore raw data folder
-content/
+# ignore vscode settings folder
+.vscode/
+
+# ignore model outputs and metrics
 lupus-emtab/
 lupus-pbmc/
 sjogrens-pbmc/
+
+# content folder specific folder control -- sync Geneformer package
+content/embs/
+content/finetuned_models/
+content/input-data/
+content/isp/
+content/processed-data/
+content/raw-data/
+
+# ignore python cache files and auxiliary files
 local-notebooks/.pybiomart.sqlite
 local-notebooks/cache/
-resouces/paper-draft/Figures
-resouces/paper-draft/.texpadtmp
 local-notebooks/dds_detailed_pipe.pkl
 local-notebooks/ds_detailed_pipe.pkl
+
+# ignore paper draft figures and auxiliary files
+resources/paper-draft/Figures/
+resources/paper-draft/.texpadtmp
+
+# ignore reference papers and associated files
 resources/reference-papers/
-.vscode/
